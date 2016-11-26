@@ -1,4 +1,5 @@
 # Miniproj3
+only need `analysis.r` and `Mini3.R` files 
 
 ### `analysis.r`:
 - calls all the methods in the `Mini3.R` file to perform AIC, BIC, and CV on 
