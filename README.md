@@ -1,12 +1,12 @@
 # Miniproj3
 
-### 'analysis.r':
-- calls all the methods in the 'Mini3.R' file to perform AIC, BIC, and CV on 
+### `analysis.r`:
+- calls all the methods in the `Mini3.R` file to perform AIC, BIC, and CV on 
   Ridge Regression, Lasso Regression, Partial Least Squares Regression, and 
   Principal Component Regression. 
 
-### 'Mini3.R':
-- Class of functions. import by calling 'source("Mini3.R")' in interpretter or
+### `Mini3.R`:
+- Class of functions. import by calling `source("Mini3.R")` in interpretter or
   in file like analysis.R
 
 
