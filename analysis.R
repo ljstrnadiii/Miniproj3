@@ -10,8 +10,8 @@ df = Boston
 X = df[,-14]
 Y = df$medv
 
-#standardize
-df.strd = standardize(X, data.frame(0), Y, data.frame(0))$train
+#standardize predictors
+X = data.frame(scale(X))
 
 
 ### AIC ###
@@ -28,7 +28,7 @@ print(lassoaic$minlambda)
 
 
 #pcr AIC
-acraic = pcrAIC(X,Y, ncol(X))
+pcraic = pcrAIC(X,Y, ncol(X))
 print("pcr: numcomps, AIC")
 print(pcraic$mincomps)
 
@@ -69,7 +69,7 @@ print(ridgecv$minlam)
 
 #lasso CV
 lassocv = lassoCV(X,Y, seq(.01,1,.01))
-print("lassoCV: lambda, Err estimate")
+print("lassoCV: t, Err estimate")
 print(lassocv$mint)
 
 #pcr CV (no mincomp returned, refer to plot output)
