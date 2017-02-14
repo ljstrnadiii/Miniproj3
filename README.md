@@ -10,11 +10,6 @@ only need `analysis.r` and `Mini3.R` files
 - Class of functions. import by calling `source("Mini3.R")` in interpretter or
   in file like analysis.R
 
+### Summary:
+- attached pdf describes analysis. Essentially, we look at various shrinkage methods and determine which one is best using various performance metrics. This analysis is done on the Boston House Dataset. 
 
-### Collaboration:
-- Check for errors. 
-1. I am not sure if pls and pcr for BIC should be a linear relationship. 
-2. make sure that the functions are returning the actual models and minimums
-3. discuss questions that pertain to the project:
-  a. which models and procedures make sense?
-  b. why?
